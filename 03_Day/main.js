@@ -230,5 +230,16 @@
 //     3. DD/MM/YYYY HH:m
 //  ### Exercises: Level 3
 
-// 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
-//  1. YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+ . YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+
+```js
+        let data = new Date();
+        let year = data.getFullYear();
+        let month =(data.getMonth() + 1).toString().padStart(2, "0");
+        let date = data.getDate().toString().padStart(2, "0");
+        let hour = data.getHours();
+        let minute = data.getMinutes();
+        let second = data.getSeconds();
+        console.log(`${year}-${month}-${date}  ${hour}:${minute}:${second}`); //2022-06-15  11:58:17
+```
