@@ -251,4 +251,14 @@ console.log(parseInt ('9.8') == parseInt(10));
  ### Exercises: Level 3
 
 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
- 1. YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+ . YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+```js
+        let humanDate = new Date();
+        let year = humanDate.getFullYear();
+        let month =(humanDate.getMonth() + 1).toString().padStart(2, "0");
+        let date = humanDate.getDate().toString().padStart(2, "0");
+        let hour = humanDate.getHours();
+        let minute = humanDate.getMinutes();
+        let second = humanDate.getSeconds();
+        console.log(`${year}-${month}-${date}  ${hour}:${minute}:${second}`); //2022-06-15  11:58:17
+```    
