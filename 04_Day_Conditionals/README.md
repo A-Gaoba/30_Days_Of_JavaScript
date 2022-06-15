@@ -214,7 +214,7 @@ switch (month) {
     case "November":
         console.log(`${month} has 30 days`)
         break;
-    case "febuary":
+    case "Febuary":
         console.log(`${month} has 29 days`)
         break;
     default:
@@ -243,7 +243,7 @@ switch (month) {
     case "November":
         console.log(`${month} has 30 days`)
         break;
-    case "febuary":
+    case "Febuary":
         console.log(`${month} has 28 days`)
         break;
     default:
