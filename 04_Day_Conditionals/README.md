@@ -194,6 +194,60 @@ switch(true){
     Enter a month: FEbruary
     February has 28 days.
   ```
+  
+  ```js
+  
+let month = prompt("Enter name of month to check number of days");
+switch (month) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+        console.log(`${month} has 31 days`)
+        break;
+    case "April":
+    case "June":
+    case "September":
+    case "November":
+        console.log(`${month} has 30 days`)
+        break;
+    case "febuary":
+        console.log(`${month} has 29 days`)
+        break;
+    default:
+        console.log("Please write it correctly");
+}
+
+  ```
 
 1. Write a program which tells the number of days in a month, now consider leap year.
+```js
+   
+let month = prompt("Enter name of month to check number of days");
+switch (month) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+        console.log(`${month} has 31 days`)
+        break;
+    case "April":
+    case "June":
+    case "September":
+    case "November":
+        console.log(`${month} has 30 days`)
+        break;
+    case "febuary":
+        console.log(`${month} has 28 days`)
+        break;
+    default:
+        console.log("Please write it correctly");
+}
 
+```
