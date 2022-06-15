@@ -55,46 +55,102 @@ console.log(parseInt ('9.8') == parseInt(10));
 ```
 
 4. Boolean value is either true or false.
-    1. Write three JavaScript statement which provide truthy value.
+   1. Write three JavaScript statement which provide truthy value.
+```js
+        let x = true;
+        let y = 1;
+        let z = "true";
+        if(x||y||z){
+            console.log("This is a truthy value");
+        }else{
+            console.log("This is a falsy value");
+        }
+```
 
     2. Write three JavaScript statement which provide falsy value.
+```js    
+        let m = false;
+        let n = 0;
+        let t = NaN;
+        let e = "";
+        let r = null;
+        let q = undefined;
+        if(m||n||e||t||r||q){
+            console.log("This is a truthy value");
+        }else{
+            console.log("This is a falsy value");
+        }
+```
 
- 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
-    1. 4 > 3
-    2. 4 >= 3
-    3. 4 < 3
-    4. 4 <= 3
-    5. 4 == 4
-    6. 4 === 4
-    7. 4 != 4
-    8. 4 !== 4
-    9. 4 != '4'
-    10. 4 == '4'
-    11. 4 === '4'
-    12. Find the length of python and jargon and make a falsy comparison statement.
+5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
+```js
+    console.log(4 > 3)          //true    
+    console.log(4 >= 3)         //true
+    console.log(4 < 3)          //false
+    console.log(4 <= 3)         //false
+    console.log(4 == 4)         //true
+    console.log(4 === 4)        //true    
+    console.log(4 != 4)         //false
+    console.log(4 !== 4)        //false    
+    console.log(4 != '4')       //false    
+    console.log( 4 == '4')      //true    
+    console.log( 4 === '4')     //false   
+```
+
+
+   Find the length of python and jargon and make a falsy comparison statement.
+```js
+    console.log('paython'.length ==  'jargon'.lenght);
+```
 
 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
-    1. 4 > 3 && 10 < 12
-    2. 4 > 3 && 10 > 12
-    3. 4 > 3 || 10 < 12
-    4. 4 > 3 || 10 > 12
-    5. !(4 > 3)
-    6. !(4 < 3)
-    7. !(false)
-    8. !(4 > 3 && 10 < 12)
-    9. !(4 > 3 && 10 > 12)
-    10. !(4 === '4')
-    11. There is no 'on' in both dragon and pytho
- 7. Use the Date object to do the following activities
-    1. What is the year today?
-    2. What is the month today as a number?
-    3. What is the date today?
-    4. What is the day today as a number?
-    5. What is the hours now?
-    6. What is the minutes now?
-    7. Find out the numbers of seconds elapsed from January 1, 1970 to now.
+```js
+     console.log(4 > 3 && 10 < 12)              //true                          
+     console.log(4 > 3 && 10 > 12)              //false                   
+     console.log(4 > 3 || 10 < 12)              //true                   
+     console.log(4 > 3 || 10 > 12)              //true                        
+     console.log(!(4 > 3))                      //false                      
+     console.log(!(4 < 3))                      //true            
+     console.log(!(false))                      //true
+     console.log(!(4 > 3 && 10 < 12))           //false                
+     console.log(!(4 > 3 && 10 > 12))           //true                    
+     console.log( !(4 === '4'))                 //true  
+``` 
+   11. There is no 'on' in both dragon and pytho
+```js
+    let paythonWord = "paython";
+    let dragonWord = "dragon";
+    let paythonWordIncludeOn = paythonWord.includes('on'); 
+    let dragonWordIncludeOn = dragonWord.includes('on'); 
+    console.log(dragonWordIncludeOn && paythonWordIncludeOn)
+```
 
- ### Exercises: Level 
+7. Use the Date object to do the following activities
+    - What is the year today?
+    - What is the month today as a number?
+    - What is the date today?
+    - What is the day today as a number?
+    - What is the hours now?
+    - What is the minutes now?
+
+```js
+        let data = new Date();
+        console.log(data.getFullYear());
+        console.log(data.getMonth());
+        console.log(data.getDate());
+        console.log(data.getDay());
+        console.log(data.getHours());
+        console.log(data.getMinutes());
+```
+
+   - Find out the numbers of seconds elapsed from January 1, 1970 to now.
+```js
+            console.log(Math.floor(data.getTime() / 1000));
+```
+
+
+
+ ### Exercises: Level 2
  1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h)
     ```sh
     Enter base: 20
@@ -109,7 +165,7 @@ console.log(parseInt ('9.8') == parseInt(10));
     Enter side c: 3
     The perimeter of the triangle is 12
     ``
- 1. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+1. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 1. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 1. Calculate the slope, x-intercept and y-intercept of y = 2x -2
 1. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
