@@ -55,7 +55,7 @@ console.log(parseInt ('9.8') == parseInt(10));
 ```
 
 4. Boolean value is either true or false.
-   1. Write three JavaScript statement which provide truthy value.
+   - Write three JavaScript statement which provide truthy value.
 ```js
         let x = true;
         let y = 1;
@@ -67,7 +67,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         }
 ```
 
-    2. Write three JavaScript statement which provide falsy value.
+   - Write three JavaScript statement which provide falsy value.
 ```js    
         let m = false;
         let n = 0;
@@ -156,7 +156,7 @@ console.log(parseInt ('9.8') == parseInt(10));
      Enter base: 20
      Enter height: 10
      The area of the triangle is 100
-``
+```
 
 ```js
         let base = prompt('Enter number');
@@ -171,7 +171,8 @@ console.log(parseInt ('9.8') == parseInt(10));
      Enter side b: 4
      Enter side c: 3
      The perimeter of the triangle is 12
-``
+```
+
 ```js
         let a = prompt('Enter number');
         let b = prompt('Enter number');
@@ -210,7 +211,7 @@ console.log(parseInt ('9.8') == parseInt(10));
     Enter hours: 40
     Enter rate per hour: 28
     Your weekly earning is 1120
-    `
+  `
 1. If the length of your name is greater than 7 say, your name is long else say your name is short.
 1. Compare your first name length and your family name length and you should get this outpu
     ```js
