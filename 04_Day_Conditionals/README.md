@@ -74,7 +74,16 @@
     Enter a number: 9
     9 is is an odd number.
     ```
-
+    
+    ```js
+     let a = prompt("Enter a Number:");
+     if(a % 2 == 0){
+         console.log(`${a} is an even number`)
+     }
+     else{
+       console.log(`${a} is is an odd number`)
+     }
+    ```
 ### Exercises: Level 2
 
 1. Write a code which  can give grades to students according to theirs scores:
