@@ -12,6 +12,16 @@
    Enter your age:15
    You are left with 3 years to drive.
    ```
+   
+   ```js
+    let input = prompt('Enter your age:')
+    let wait = Math.abs(input - 18);
+    if(input >= 18){
+        console.log('You are old enough to drive');
+    }else{
+      console.log(`You are left with ${wait} years to drive.`);
+    }
+   ```
 
 1. Compare the values of myAge and yourAge using if … else. Based on the comparison and log the result to console stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
 
