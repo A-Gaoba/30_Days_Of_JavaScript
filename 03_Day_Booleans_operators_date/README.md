@@ -206,12 +206,22 @@ console.log(parseInt ('9.8') == parseInt(10));
 7. Compare the slope of above two questions.
 8. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the perso
-    ```sh
+  ```sh
     Enter hours: 40
     Enter rate per hour: 28
     Your weekly earning is 1120
-  `
+  ```
+  
 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+```js
+    let firstName = "Abdulrahman";
+    let lastName ="Gaoba";
+    if(firstName.length > lastName.length){
+        console.log("your name is long")
+    }else{
+        console.log("your name is short")
+    }
+```
 
 11. Compare your first name length and your family name length and you should get this outpu
     ```js
