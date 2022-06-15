@@ -237,6 +237,17 @@ console.log(parseInt ('9.8') == parseInt(10));
      Enter birth year: 2005
      You are 15. You will be allowed to drive after 3 years.
      ``
+ ```js
+         let age = prompt("Enter birth year:");
+        let date = new Date();
+        let yourAge = date.getFullYear() - age;
+        if (yourAge > 18) {
+             console.log("You are old enough to drive");
+        } else {
+             console.log(`you are ${yourAge}, you will be allowed to drive after ${yourAge - 18} years`);
+        }
+ ```
+ 
  14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
     ```sh
