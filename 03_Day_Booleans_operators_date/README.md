@@ -211,6 +211,14 @@ console.log(parseInt ('9.8') == parseInt(10));
     Enter rate per hour: 28
     Your weekly earning is 1120
   ```
+
+```js
+    let hours = Number(prompt("Enter hours:"));
+    let rate = Number(prompt("Enter rate per hour:"));
+    let pay = hours * rate;
+    console.log(`Your weekly earning is ${pay}`)
+```
+  
   
 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 ```js
