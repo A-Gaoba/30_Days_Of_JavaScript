@@ -167,7 +167,16 @@ switch(true){
     What is the day today? FrIDAy
     Friday is a working day.
   ```
-
+   ```js
+   let weekendDay = prompt("enter weekDay to check if it's a weekend")
+   if (weekendDay == "Saturday" || weekendDay == "Sunday") {
+       console.log(`${weekendDay} is a weekend day`);
+   } else if (weekendDay == "Monday" || weekendDay == "Tuesday" || weekendDay == "Wednesday" || weekendDay == "Thursday" || weekendDay == "Friday") {
+       console.log(`${weekendDay} is a work day`);
+   } else {
+       console.log("Please write it correctly");
+   }
+   ```
 ### Exercises: Level 3
 
 1. Write a program which tells the number of days in a month.
