@@ -222,13 +222,26 @@ console.log(parseInt ('9.8') == parseInt(10));
      Your first name, Asabeneh is longer than your family name, Yetayeh
      ``
  12. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge
-    ```js
+  
+ ```js
     let myAge = 250
     let yourAge = 25
-    ``
-    ```sh
+ ```
+ 
+ ```sh
     I am 225 years older than you.
-    ``
+ ```
+ 
+ ```js
+        let myAge = 24;
+        let yourAge = prompt("Enter your age:");
+        if (yourAge > myAge) {
+             console.log(`You are ${yourAge} years older than you`);
+        } else {
+             console.log(`I am ${myAge} years older than you`);
+        }
+ ```
+ 
  13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
      ```s
@@ -250,10 +263,10 @@ console.log(parseInt ('9.8') == parseInt(10));
  
  14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
-    ```sh
+  ```sh
     Enter number of years you live: 100
     You lived 3153600000 seconds.
-     ```
+ ```
 
 ```js
         let age = prompt('Enter number of years you live:');
