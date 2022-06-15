@@ -115,9 +115,8 @@ console.log(parseInt ('9.8') == parseInt(10));
      console.log(!(4 > 3 && 10 < 12))           //false                
      console.log(!(4 > 3 && 10 > 12))           //true                    
      console.log( !(4 === '4'))                 //true  
-``` 
-   11. There is no 'on' in both dragon and pytho
-```js
+      
+     //There is no 'on' in both dragon and python
     let paythonWord = "paython";
     let dragonWord = "dragon";
     let paythonWordIncludeOn = paythonWord.includes('on'); 
@@ -202,18 +201,18 @@ console.log(parseInt ('9.8') == parseInt(10));
 ```
  
  
-1. Calculate the slope, x-intercept and y-intercept of y = 2x -2
-1. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
-1. Compare the slope of above two questions.
-1. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-1. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the perso
+5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+6. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
+7. Compare the slope of above two questions.
+8. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the perso
     ```sh
     Enter hours: 40
     Enter rate per hour: 28
     Your weekly earning is 1120
   `
-1. If the length of your name is greater than 7 say, your name is long else say your name is short.
-1. Compare your first name length and your family name length and you should get this outpu
+10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+11. Compare your first name length and your family name length and you should get this outpu
     ```js
     let firstName = 'Asabeneh'
     let lastName = 'Yetayeh'
@@ -222,7 +221,7 @@ console.log(parseInt ('9.8') == parseInt(10));
      ```sh
      Your first name, Asabeneh is longer than your family name, Yetayeh
      ``
- 1. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge
+ 12. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge
     ```js
     let myAge = 250
     let yourAge = 25
@@ -230,7 +229,7 @@ console.log(parseInt ('9.8') == parseInt(10));
     ```sh
     I am 225 years older than you.
     ``
- 1. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+ 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
      ```s
      Enter birth year: 1995
@@ -238,7 +237,7 @@ console.log(parseInt ('9.8') == parseInt(10));
      Enter birth year: 2005
      You are 15. You will be allowed to drive after 3 years.
      ``
- 1. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+ 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
     ```sh
     Enter number of years you live: 100
@@ -252,7 +251,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         console.log(`You lived ${yourAge} seconds`); 
    ```
     
- 1. Create a human readable time format using the Date time object
+ 15. Create a human readable time format using the Date time object
 ```js
         let humanDate = new Date();
         let year = humanDate.getFullYear();
