@@ -53,6 +53,18 @@
       4 is greater than 3
     ```
 
+   ```js
+   
+    let a = prompt("Enter a Number:");
+    let b = prompt("Enter a Number:");
+    if(a > b){
+        console.log(`${a} is greater than ${b}`)
+    }
+    else{
+      console.log(`${b} is greater than ${a}`)
+    }
+
+   ```
 1. Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 
     ```sh
