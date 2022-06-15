@@ -84,6 +84,7 @@
        console.log(`${a} is is an odd number`)
      }
     ```
+
 ### Exercises: Level 2
 
 1. Write a code which  can give grades to students according to theirs scores:
@@ -92,6 +93,29 @@
    - 60-69, C
    - 50-59, D
    - 0-49, F
+
+  ```js
+let score = prompt('enter your scores:');
+switch(true){
+  case(score >= 90 && score < 100):
+      console.log('your grade is A');
+      break;
+  case(score >= 70 && score < 90):
+      console.log('your grade is B');
+      break;
+  case(score >= 60 && score <= 70):
+      console.log('your grade is C');
+      break;
+  case(score >= 50 && score < 60):
+    console.log('your grade is D');
+    break;
+  case(score > 0 && score < 50):
+    console.log('your grade is F');
+  default:
+   console.log('your score is not correct');
+}
+
+  ```
 1. Check if the season is Autumn, Winter, Spring or Summer.
    If the user input is :
    - September, October or November, the season is Autumn.
