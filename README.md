@@ -1,5 +1,5 @@
 # 30_Days_Of_JavaScript
-## In this repository there are the solutions of exercises that are in the repository[30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+## In this repository there are the solutions of exercises that are in the repository [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
 | # Day |                                                                       Topics                                                                        |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
