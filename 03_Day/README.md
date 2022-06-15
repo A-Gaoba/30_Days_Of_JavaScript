@@ -243,7 +243,15 @@ console.log(parseInt ('9.8') == parseInt(10));
     ```sh
     Enter number of years you live: 100
     You lived 3153600000 seconds.
-    ``
+ ```
+
+```js
+        let age = prompt('Enter number of years you live:');
+        let ageInSeconds = 3153600; // 365 * 24 * 60 * 60
+        let yourAge = age * ageInSeconds;
+        console.log(`You lived ${yourAge} seconds`); 
+   ```
+    
  1. Create a human readable time format using the Date time object
 ```js
         let humanDate = new Date();
