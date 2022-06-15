@@ -5,7 +5,7 @@
 
 ### Exercises: Level 1
 
-1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
+### 1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
 ```js
 let firstName  = 'Abdulrahman'; 
 let lastName = 'Gaoba';
@@ -41,7 +41,7 @@ let AbdulrahmanObject = {
     console.log(typeof(AbdulrahmanObject.year));
  ```
 
-2. Check if type of '10' is equal to 10
+### 2. Check if type of '10' is equal to 10
 ```js
 let str = '10';
 let num = 10;
@@ -49,12 +49,12 @@ console.log(typeof (str) == typeof(num));
 ```
 
 
-3. Check if parseInt('9.8') is equal to 10
+### 3. Check if parseInt('9.8') is equal to 10
 ```js
 console.log(parseInt ('9.8') == parseInt(10));
 ```
 
-4. Boolean value is either true or false.
+### 4. Boolean value is either true or false.
    - Write three JavaScript statement which provide truthy value.
 ```js
         let x = true;
@@ -82,7 +82,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         }
 ```
 
-5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
+### 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
 ```js
     console.log(4 > 3)          //true    
     console.log(4 >= 3)         //true
@@ -103,7 +103,7 @@ console.log(parseInt ('9.8') == parseInt(10));
     console.log('paython'.length ==  'jargon'.lenght);
 ```
 
-6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+### 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 ```js
      console.log(4 > 3 && 10 < 12)              //true                          
      console.log(4 > 3 && 10 > 12)              //false                   
@@ -124,7 +124,7 @@ console.log(parseInt ('9.8') == parseInt(10));
     console.log(dragonWordIncludeOn && paythonWordIncludeOn)
 ```
 
-7. Use the Date object to do the following activities
+### 7. Use the Date object to do the following activities
     - What is the year today?
     - What is the month today as a number?
     - What is the date today?
@@ -150,7 +150,7 @@ console.log(parseInt ('9.8') == parseInt(10));
 
 
  ### Exercises: Level 2
- 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h)
+ ### 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h)
   ```sh
      Enter base: 20
      Enter height: 10
@@ -164,7 +164,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         console.log(area);
 ```
 
-2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+### 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 ```sh
      Enter side a: 5
      Enter side b: 4
@@ -180,7 +180,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         console.log(perimeter);
 ```
 
-3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+### 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 ```js
         let lengthOfRectangle = prompt('Enter number');
         let widthOfRectangle = prompt('Enter number');
@@ -190,7 +190,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         console.log(perimeterOfRectangle);
 ```
 
-4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+### 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 ```js
         let radius = prompt('Enter number');
         const pi = 3.14;
@@ -201,48 +201,93 @@ console.log(parseInt ('9.8') == parseInt(10));
 ```
  
  
-5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
-6. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
-7. Compare the slope of above two questions.
-8. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the perso
-    ```sh
+### 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+### 6. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>). Find the slope between point (2, 2) and point(6,10)
+### 7. Compare the slope of above two questions.
+### 8. Calculate the value of y (y = x<sup>2</sup> + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+### 9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the perso
+  ```sh
     Enter hours: 40
     Enter rate per hour: 28
     Your weekly earning is 1120
-  `
-10. If the length of your name is greater than 7 say, your name is long else say your name is short.
-11. Compare your first name length and your family name length and you should get this outpu
+  ```
+
+```js
+    let hours = Number(prompt("Enter hours:"));
+    let rate = Number(prompt("Enter rate per hour:"));
+    let pay = hours * rate;
+    console.log(`Your weekly earning is ${pay}`)
+```
+  
+  
+### 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+```js
+    let firstName = "Abdulrahman";
+    let lastName ="Gaoba";
+    if(firstName.length > lastName.length){
+        console.log("your name is long")
+    }else{
+        console.log("your name is short")
+    }
+```
+
+### 11. Compare your first name length and your family name length and you should get this outpu
     ```js
     let firstName = 'Asabeneh'
     let lastName = 'Yetayeh'
     ```
 
-     ```sh
+ ```sh
      Your first name, Asabeneh is longer than your family name, Yetayeh
-     ``
- 12. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge
-    ```js
+ ```
+   
+ ### 12. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge
+  
+ ```js
     let myAge = 250
     let yourAge = 25
-    ``
-    ```sh
+ ```
+ 
+ ```sh
     I am 225 years older than you.
-    ``
- 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+ ```
+ 
+ ```js
+        let myAge = 24;
+        let yourAge = prompt("Enter your age:");
+        if (yourAge > myAge) {
+             console.log(`You are ${yourAge} years older than you`);
+        } else {
+             console.log(`I am ${myAge} years older than you`);
+        }
+ ```
+ 
+ ### 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
-     ```s
+ ```sh
      Enter birth year: 1995
      You are 25. You are old enough to driv
      Enter birth year: 2005
      You are 15. You will be allowed to drive after 3 years.
-     ``
- 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+ ```
+  
+ ```js
+         let age = prompt("Enter birth year:");
+        let date = new Date();
+        let yourAge = date.getFullYear() - age;
+        if (yourAge > 18) {
+             console.log("You are old enough to drive");
+        } else {
+             console.log(`you are ${yourAge}, you will be allowed to drive after ${yourAge - 18} years`);
+        }
+ ```
+ 
+### 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
-    ```sh
+  ```sh
     Enter number of years you live: 100
     You lived 3153600000 seconds.
-     ```
+ ```
 
 ```js
         let age = prompt('Enter number of years you live:');
@@ -251,7 +296,7 @@ console.log(parseInt ('9.8') == parseInt(10));
         console.log(`You lived ${yourAge} seconds`); 
    ```
     
- 15. Create a human readable time format using the Date time object
+ ### 15. Create a human readable time format using the Date time object
 ```js
         let humanDate = new Date();
         let year = humanDate.getFullYear();
@@ -277,7 +322,7 @@ console.log(parseInt ('9.8') == parseInt(10));
 
  ### Exercises: Level 3
 
-1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+### 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
  . YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 ```js
         console.log(`${year}-${month}-${date}  ${hour}:${minute}:${second}`); //2022-06-15  12:08:04
