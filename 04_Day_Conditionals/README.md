@@ -17,7 +17,7 @@
     let input = prompt('Enter your age:')
     let wait = Math.abs(input - 18);
     if(input >= 18){
-        console.log('You are old enough to drive');
+        console.log('You are old enough to drive.');
     }else{
       console.log(`You are left with ${wait} years to drive.`);
     }
@@ -28,6 +28,15 @@
    ```sh
    Enter your age: 30
    You are 5 years older than me.
+   ```
+   ```js
+   let myAge = 24;
+   let yourAge = prompt("Enter your age:");
+   if (myAge > yourAge) {
+      console.log(`I am ${myAge} years old. I am older than you!`);
+   } else {
+       console.log(`You are ${yourAge} years old. You are older than me!`);
+   }
    ```
 
 1. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
