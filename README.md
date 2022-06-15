@@ -4,7 +4,7 @@
 | # Day |                                                                       Topics                                                                        |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
 | 01    |                                                             [Introduction](./readMe.md)                                                             |
-| 02    |                                               [Data Types]                                                |
+| 02    |                                               [Data Types](./02_Day_Data_types/README.md)                                               |
 | 03    |                             [Booleans, Operators, Date](./03_Day_Booleans_operators_date/README.md)                             |
 | 04    |                                            [Conditionals](./04_Day_Conditionals/04_day_conditionals.md)                                             |
 | 05    |                                                     [Arrays](./05_Day_Arrays/05_day_arrays.md)                                                      |
