@@ -245,13 +245,6 @@ console.log(parseInt ('9.8') == parseInt(10));
     You lived 3153600000 seconds.
     ``
  1. Create a human readable time format using the Date time object
-    1. YYYY-MM-DD HH:mm
-    2. DD-MM-YYYY HH:mm
-    3. DD/MM/YYYY HH:m
- ### Exercises: Level 3
-
-1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
- . YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 ```js
         let humanDate = new Date();
         let year = humanDate.getFullYear();
@@ -260,5 +253,25 @@ console.log(parseInt ('9.8') == parseInt(10));
         let hour = humanDate.getHours();
         let minute = humanDate.getMinutes();
         let second = humanDate.getSeconds();
-        console.log(`${year}-${month}-${date}  ${hour}:${minute}:${second}`); //2022-06-15  11:58:17
+```
+   - YYYY-MM-DD HH:mm
+```js
+        console.log(`${year}-${month}-${date}  ${hour}:${minute}`);//2022-06-15  12:08
+```  
+
+   - DD-MM-YYYY HH:mm
+```js
+         console.log(`${date}-${month}-${year}  ${hour}:${minute}`);//15-06-2022  12:08
+```
+   - DD/MM/YYYY HH:m
+```js
+        console.log(`${date}/${month}/${year}  ${hour}:${minute}`);//15/06/2022  12:08
+```
+
+ ### Exercises: Level 3
+
+1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+ . YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+```js
+        console.log(`${year}-${month}-${date}  ${hour}:${minute}:${second}`); //2022-06-15  12:08:04
 ```    
