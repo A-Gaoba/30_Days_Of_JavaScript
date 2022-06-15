@@ -212,15 +212,17 @@ console.log(parseInt ('9.8') == parseInt(10));
     Your weekly earning is 1120
   `
 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+
 11. Compare your first name length and your family name length and you should get this outpu
     ```js
     let firstName = 'Asabeneh'
     let lastName = 'Yetayeh'
     ```
 
-     ```sh
+ ```sh
      Your first name, Asabeneh is longer than your family name, Yetayeh
-     ``
+ ```
+   
  12. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge
   
  ```js
@@ -244,12 +246,13 @@ console.log(parseInt ('9.8') == parseInt(10));
  
  13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
-     ```s
+ ```sh
      Enter birth year: 1995
      You are 25. You are old enough to driv
      Enter birth year: 2005
      You are 15. You will be allowed to drive after 3 years.
-     ``
+ ```
+  
  ```js
          let age = prompt("Enter birth year:");
         let date = new Date();
