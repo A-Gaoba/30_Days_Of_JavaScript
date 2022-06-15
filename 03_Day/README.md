@@ -243,7 +243,7 @@ console.log(parseInt ('9.8') == parseInt(10));
     ```sh
     Enter number of years you live: 100
     You lived 3153600000 seconds.
- ```
+     ```
 
 ```js
         let age = prompt('Enter number of years you live:');
