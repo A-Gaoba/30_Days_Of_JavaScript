@@ -241,9 +241,37 @@
     ```
 
     - Sort the array and find the min and max age
+    ```js
+    console.log(ages.sort());
+    console.log(ages[0]); // min
+    console.log(ages[ages.length-1]); //max
+    ```
+    
     - Find the median age(one middle item or two middle items divided by two)
+    ```js
+    console.log(ages[Math.floor(ages.length / 2)]);
+    ```
+
     - Find the average age(all items divided by number of items)
+   ```js
+      let averageAge;
+      let lengthArray = ages.length;
+      let totalAge = 0;
+      for (i = 0; i < lengthArray; i++) {
+        totalAge = totalAge + ages[i];
+      }
+      averageAge = totalAge / ages.length;
+      console.log(averageAge);
+   ```
+
     - Find the range of the ages(max minus min)
+    ```js
+     let min = sortedArr[0];
+     let max = sortedArr[sortedArr.length-1];
+     let range = max - min;
+     console.log(range);
+    ```
+    
     - Compare the value of (min - average) and (max - average), use _abs()_ method
 1.Slice the first ten countries from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
