@@ -181,8 +181,9 @@
     ```
 
    - add 'Meat' in the beginning of your shopping cart if it has not been already added
-   
+   ```js
    shoppingCart.unshift("Meat");
+   ```
    - add Sugar at the end of you shopping cart if it has not been already added
    - remove 'Honey' if you are allergic to honey
    - modify Tea to 'Green Tea'
