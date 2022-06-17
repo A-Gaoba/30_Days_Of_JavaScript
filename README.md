@@ -6,8 +6,8 @@
 | 01    |                                                             [Introduction](./readMe.md)                                                             |
 | 02    |                                               [Data Types](./02_Day_Data_types/README.md)                                               |
 | 03    |                             [Booleans, Operators, Date](./03_Day_Booleans_operators_date/README.md)                             |
-| 04    |                                            [Conditionals](./04_Day_Conditionals/04_day_conditionals.md)                                             |
-| 05    |                                                     [Arrays](./05_Day_Arrays/05_day_arrays.md)                                                      |
+| 04    |                                            [Conditionals](./04_Day_Conditionals/README.md)                                             |
+| 05    |                                                     [Arrays](./05_Day_Arrays/README.md)                                                      |
 | 06    |                                                       [Loops](./06_Day_Loops/06_day_loops.md)                                                       |
 | 07    |                                                 [Functions](./07_Day_Functions/07_day_functions.md)                                                 |
 | 08    |                                                    [Objects](./08_Day_Objects/08_day_objects.md)                                                    |
