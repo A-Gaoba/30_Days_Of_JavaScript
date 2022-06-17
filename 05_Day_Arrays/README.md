@@ -280,7 +280,7 @@
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
   ```js
     let lengthArray = countries.length;
-    console.log(countries[(Math.floor([lengthArray/2]))]);
+    console.log(countries[(Math.floor([lengthArray/2]))]); // Lesotho
   ```
 
 3. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
