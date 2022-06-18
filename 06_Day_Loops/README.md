@@ -207,14 +207,16 @@
      ```
 
  13. Develop a small script which generate array of 5 random numbers
-    ```js
-       let randomNumbers = [];
-       for (let i = 0; i < 5; i++) {
-         randomNumbers.push(Math.floor(Math.random()*10));
-       }
-       console.log(randomNumbers);
-   ```
+    
+     ```js
+      let randomNumbers = [];
+      for (let i = 0; i < 5; i++) {
+        randomNumbers.push(Math.floor(Math.random()*10));
+      }
+      console.log(randomNumbers);
 
+     ```
+     
  14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
     ```JS
        let randomNumbers = [];
