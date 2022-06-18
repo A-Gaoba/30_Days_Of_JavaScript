@@ -2,7 +2,7 @@
 
  ### Exercises: Level 1
 
-    ```js
+   ```js
     const countries = [
       'Albania',
       'Bolivia',
@@ -28,7 +28,7 @@
     ]
 
     const mernStack = ['MongoDB', 'Express', 'React', 'Node']
-    ```
+   ```
 
 1. Iterate 0 to 10 using for loop, do the same using while and do while loop
   ```js
@@ -78,7 +78,7 @@
      }
   ```
   
-    ```js
+  ```js
         #
         ##
         ###
@@ -86,7 +86,7 @@
         #####
         ######
         #######
-    ```
+   ```
 
  5. Use loop to print the following pattern:
 
@@ -165,13 +165,14 @@
      ```sh
      The sum of all numbers from 0 to 100 is 5050.
      ```
-    ```js
+     
+     ```js
        let sum = 0 ;
        for(let i = 0; i<=100;i++){
            sum = sum +i;
          }
        console.log(`The sum of all numbers from 0 to 100 is ${sum}`); 
-    ```
+     ```
 
  11. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
@@ -193,7 +194,7 @@
      ```sh
        [2550, 2500]
      ```
-    ```js
+     ```js
        let sumOdds = 0
        for(let i = 0; i<=100;i++){
           if(i%2 == 0){
@@ -203,7 +204,7 @@
        console.log(`The sum of all numbers from 0 to 100 is ${sumOdds}`);
        console.log(`[${sumEvens}, ${sumOdds}]`)
 
-    ```
+     ```
 
  13. Develop a small script which generate array of 5 random numbers
     ```js
@@ -212,7 +213,7 @@
          randomNumbers.push(Math.floor(Math.random()*10));
        }
        console.log(randomNumbers);
-    ```
+   ```
 
  14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
     ```JS
