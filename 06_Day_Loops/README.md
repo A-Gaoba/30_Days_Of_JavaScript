@@ -218,24 +218,28 @@
      ```
      
  14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
-    ```JS
-       let randomNumbers = [];
+
+     ```js
+    let randomNumbers = [];
        for (let i = 0; i < 5; i++) {
          let num = (Math.floor(Math.random()*10));
          if(randomNumbers.indexOf(num) === -1)
          randomNumbers.push(num)
        }
        console.log(randomNumbers);
-    ```
+
+     ```
 
  15. Develop a small script which generate a six characters random id:
 
      ```sh
      5j2khz
      ```
+     
     ```JS
      const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     ```
+    
     ```JS
      let randomId = ' ';
      const charactersLength = characters.length;
