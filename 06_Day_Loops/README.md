@@ -1,294 +1,387 @@
-### Exercise: Level 1
+ ## 💻 Exercises:Day 6
 
-1. Declare an _empty_ array;
+ ### Exercises: Level 1
+
+    ```js
+    const countries = [
+      'Albania',
+      'Bolivia',
+      'Canada',
+      'Denmark',
+      'Ethiopia',
+      'Finland',
+      'Germany',
+      'Hungary',
+      'Ireland',
+      'Japan',
+      'Kenya'
+    ]
+
+    const webTechs = [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Redux',
+      'Node',
+      'MongoDB'
+    ]
+
+    const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+    ```
+
+1. Iterate 0 to 10 using for loop, do the same using while and do while loop
   ```js
-    let arr = [];
+      // for loop
+     for(let i = 0; i <= 10; i++){
+       console.log(i);
+     }
+
+    // while loop
+    let index = 0;
+    while(index <= 10){
+       console.log(index);
+       index++;
+    }
   ```
 
-2. Declare an array with more than 5 number of elements
-  ```js
-    arr = [1,2.3,'Gaoba',true,null];
+2. Iterate 10 to 0 using for loop, do the same using while and do while loop
+  ```js  
+     //for loop
+     for(let i = 10; i >= 0; i--){
+       console.log(i);
+     }
+
+    //while loop
+     let index = 10;
+     while(index >= 0){
+     console.log(index);
+     index--;
+     }
   ```
 
-3. Find the length of your array
+ 3. Iterate 0 to n using for loop
   ```js
-    console.log(arr.length);
+     let n = prompt('please inter a Number:');
+     for(let i = 0; i <= n; i++){
+       console.log(i);
+     }
   ```
 
-4. Get the first item, the middle item and the last item of the array
-  ```js
-    console.log(arr[0]);                //first item
-    let middleItem = Math.floor((arr.length)/2);
-    console.log(arr[middleItem]);   // middle item
-    console.log(arr[arr.length-1]);    // last item
-  ```
+ 4. Write a loop that makes the following pattern using console.log():
 
-5. Declare an array called _mixedDataTypes_, put different data types in the array and find the length of the array. The array size should  be greater than 5
   ```js
-    let mixedDataTypes = [1,2.3,'Gaoba',true,null];
-  ```
-
-6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
-  ```js
-    arr = [1,2.3,'Gaoba',true,null];
-  ```
-
-7. Print the array using _console.log()_
-  ```js
-    console.log(itCompanies);
-  ```
-
-8. Print the number of companies in the array
-  ```js
-    console.log(itCompanies.length);
-  ```
-
-9. Print the first company, middle and last company
-  ```js
-    console.log(itCompanies[0]);                //first item
-    let middleCompany = Math.floor((itCompanies.length)/2);
-    console.log(itCompanies[middleCompany]);   // middle item
-    console.log(itCompanies[itCompanies.length-1]);    // last item
-  ```
-  
-10. Print out each company
-  ```js
-    for(let i = 0 ; i < itCompanies.length; i++){
-       console.log(itCompanies[i]);
+     let rectangle = "";
+     for (let i = 0; i < 7; i++) {
+         rectangle = rectangle + "#";
+         console.log(rectangle);
      }
   ```
   
-11. Change each company name  to uppercase one by one and print them out
+    ```js
+        #
+        ##
+        ###
+        ####
+        #####
+        ######
+        #######
+    ```
+
+ 5. Use loop to print the following pattern:
+
+    ```sh
+    0 x 0 = 0
+    1 x 1 = 1
+    2 x 2 = 4
+    3 x 3 = 9
+    4 x 4 = 16
+    5 x 5 = 25
+    6 x 6 = 36
+    7 x 7 = 49
+    8 x 8 = 64
+    9 x 9 = 81
+    10 x 10 = 100
+    ```
   ```js
-    for(let i = 0 ; i < itCompanies.length; i++){
-       console.log(itCompanies[i].toUpperCase());
+    let num = 0;
+    for(let i = 0; i < 11; i++){
+      num = i * i;
+      console.log(`${i} * ${i} = ${num}`);
+    }
+  ```
+
+ 6. Using loop print the following pattern
+
+    ```sh
+     i    i^2   i^3
+     0    0     0
+     1    1     1
+     2    4     8
+     3    9     27
+     4    16    64
+     5    25    125
+     6    36    216
+     7    49    343
+     8    64    512
+     9    81    729
+     10   100   1000
+    ```
+    ```js
+     for(let i = 0; i < 11; i++){
+       let squar = Math.pow(i,2);
+       let cub = Math.pow(i,3);
+       console.log(`${i}  |  ${squar}  |  ${cub}`);
      }
-  ```
-  
-12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
-  ```js
-    console.log(`${itCompanies} are big IT companies.`);
-  ```
-  
-13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is _not found_
-  ```js
-    if(itCompanies.includes('Yandex')){
-       console.log('');
-    }
-    else{
-       console.log('company is not found');
-    }
-  ```
-  
-14. Filter out companies which have more than one 'o' without the filter method
-  ```js
-    let filterd = [];
-     itCompanies.filter (company => {
-       if(company.match(/o/gi) ) {
-         filterd.push(company)
+    ```
+
+ 7. Use for loop to iterate from 0 to 100 and print only even numbers
+    ```js
+       for(let i = 0; i<=100;i++){
+           if(i%2 == 0){
+             console.log(i);
+           }
        }
-     })
-     console.log(itCompanies);
-     console.log(filterd);
-  ```
-  ```js
-    //here we filterd all companies which have more than one o;
-    let filterd = [];
-    itCompanies.map(filterdCompany => {
-      if(filterdCompany.match(/o/gi) && filterdCompany.match(/o/gi).length > 1) {
-        filterd.push(filterdCompany)
-      }
-    })
-    console.log(itCompanies);
-    console.log(filterd);
-  ```
-  
-15. Sort the array using _sort()_ method
-  ```js
-    console.log(itCompanies.sort());
-  ```
-  
-16. Reverse the array using _reverse()_ method
-  ```js
-    console.log(itCompanies.reverse());
-  ```
-  
-17. Slice out the first 3 companies from the array
-  ```js
-    console.log(itCompanies.slice(0,3));
-  ```
-  
-18. Slice out the last 3 companies from the array
-  ```js
-    console.log(itCompanies.slice(-3));
-  ```
-  
-19. Slice out the middle IT company or companies from the array
-  ```js
-    let middleItCompany = Math.floor(itCompanies.length / 2);
-    console.log(itCompanies[middleItCompany]);
-  ```
-  ```js
-    // Slice out the middle company using slice method
-      console.log(itCompanies.slice(Math.floor(itCompanies.length / 2), 1));
-  ```
-
-20. Remove the first IT company from the array
-  ```js
-    console.log(itCompanies.shift());
-  ```
-  
-21. Remove the middle IT company or companies from the array
-  ```js
-     console.log(itCompanies.slice(Math.floor(itCompanies.length / 2), 1));
-  ```
-  
-22. Remove the last IT company from the array
-  ```js
-    console.log(itCompanies.pop());
-  ```
-  
-23. Remove all IT companies
-  ```js
-    let lengthArray = itCompanies.length ;
-    for(let i = 0; i < lengthArray; i++){
-      itCompanies.pop();
-      console.log(itCompanies);
-    }
-  ```
-
-### Exercise: Level 2
-
-1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
-1. First remove all the punctuations and change the string to array and count the number of words in the array
-    ```sh
-    ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
-  
-    13
     ```
 
+ 8. Use for loop to iterate from 0 to 100 and print only odd numbers
     ```js
-    let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-     let words = text.replace(/[\.,]/gi, '').split(' ');
-     console.log(words);
-     console.log(words.length);
+       for(let i = 0; i<=100;i++){
+         if(i%2 == 1){
+           console.log(i);
+         }
+       }
     ```
 
-1. In the following shopping cart add, remove, edit items
+ 9. Use for loop to iterate from 0 to 100 and print only prime numbers
+      ```js
 
+
+
+
+      ```
+
+ 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+     ```sh
+     The sum of all numbers from 0 to 100 is 5050.
+     ```
     ```js
-    const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+       let sum = 0 ;
+       for(let i = 0; i<=100;i++){
+           sum = sum +i;
+         }
+       console.log(`The sum of all numbers from 0 to 100 is ${sum}`); 
     ```
 
-   - add 'Meat' in the beginning of your shopping cart if it has not been already added
-       ```js
-       shoppingCart.unshift("Meat");//['Meat', 'Milk', 'Coffee', 'Tea', 'Honey']
-       ```
-   - add Sugar at the end of you shopping cart if it has not been already added
-       ```js
-       shoppingCart.push("Sugar"); //['Milk', 'Coffee', 'Tea', 'Honey', 'Sugar']
-       ```
-   - remove 'Honey' if you are allergic to honey
-       ```js
-       shoppingCart.pop(); //['Milk', 'Coffee', 'Tea']
-       ```
-       
-   - modify Tea to 'Green Tea'
-       ```js
-           let change = shoppingCart.indexOf('Tea');
-           shoppingCart[change] = 'green Tea';
+ 11. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
-           console.log(shoppingCart); 
-       ```
+     ```sh
+     The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
+     ```
+     ```js
+       let sumEvens = 0
+       for(let i = 0; i<=100;i++){
+          if(i%2 == 1){
+           sumEvens = sumEvens + i;
+           }
+       }
+       console.log(`The sum of all numbers from 0 to 100 is ${sumEvens}`);
+     ```
 
-1. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-  ```js
-    countries.includes('Ethiopia')? console.log("ETHIOPIA"): countries.push("Ethiopia");
-  ```
-       
-3. In the webTechs array check if Sass exists in the array  and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
-```js
-  const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-  ]
-```
-5. Concatenate the following two variables and store it in a fullStack variable.
+ 12. Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
+     ```sh
+       [2550, 2500]
+     ```
     ```js
-    const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-    const backEnd = ['Node','Express', 'MongoDB']
-    let fullStack = frontEnd.concat(backEnd);
-    console.log(fullStack)
+       let sumOdds = 0
+       for(let i = 0; i<=100;i++){
+          if(i%2 == 0){
+           sumOdds = sumOdds + i;
+           }
+       }
+       console.log(`The sum of all numbers from 0 to 100 is ${sumOdds}`);
+       console.log(`[${sumEvens}, ${sumOdds}]`)
+
     ```
 
-    ```sh
-    ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
-    ```
-   
-
-### Exercise: Level 3
-
-1. The following is an array of 10 students ages:
-
+ 13. Develop a small script which generate array of 5 random numbers
     ```js
-    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+       let randomNumbers = [];
+       for (let i = 0; i < 5; i++) {
+         randomNumbers.push(Math.floor(Math.random()*10));
+       }
+       console.log(randomNumbers);
     ```
 
-    - Sort the array and find the min and max age
-    ```js
-    console.log(ages.sort());
-    console.log(ages[0]); // min
-    console.log(ages[ages.length-1]); //max
+ 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
+    ```JS
+       let randomNumbers = [];
+       for (let i = 0; i < 5; i++) {
+         let num = (Math.floor(Math.random()*10));
+         if(randomNumbers.indexOf(num) === -1)
+         randomNumbers.push(num)
+       }
+       console.log(randomNumbers);
+    ```
+
+ 15. Develop a small script which generate a six characters random id:
+
+     ```sh
+     5j2khz
+     ```
+    ```JS
+     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    ```
+    ```JS
+     let randomId = ' ';
+     const charactersLength = characters.length;
+     for ( let i = 0; i < 6; i++ ) {
+       let random = characters.charAt((Math.random() * charactersLength));
+       randomId = randomId + random;
+     }
+     console.log(randomId);
     ```
     
-    - Find the median age(one middle item or two middle items divided by two)
-    ```js
-    console.log(ages[Math.floor(ages.length / 2)]);
-    ```
+ ### Exercises: Level 2
 
-    - Find the average age(all items divided by number of items)
-   ```js
-      let averageAge;
-      let lengthArray = ages.length;
-      let totalAge = 0;
-      for (i = 0; i < lengthArray; i++) {
-        totalAge = totalAge + ages[i];
-      }
-      averageAge = totalAge / ages.length;
-      console.log(averageAge);
-   ```
+ 1. Develop a small script which generate any number of characters random id:
 
-    - Find the range of the ages(max minus min)
-    ```js
-     let min = sortedArr[0];
-     let max = sortedArr[sortedArr.length-1];
-     let range = max - min;
-     console.log(range);
-    ```
-    
-    - Compare the value of (min - average) and (max - average), use _abs()_ method
-1.Slice the first ten countries from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-  ```js
-  console.log(countries.slice(0,10));
-  ```
-1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
-  ```js
-    let lengthArray = countries.length;
-    console.log(countries[(Math.floor([lengthArray/2]))]);
-  ```
+     ```sh
+       fe3jo1gl124g
+     ```
 
-3. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
-  ```js
-   for(let i = 0; i < countries.length; i++){
-     countries.pop();
-   }
-   console.log(countries);
-  ```
+     ```sh
+       xkqci4utda1lmbelpkm03rba
+     ```
+ let randomId = ' ';
+ let randomNum = (Math.floor(Math.random()*10))
+ const charactersLength = characters.length;
+ for ( let i = 0; i < randomNum; i++ ) {
+   let random = characters.charAt((Math.random() * charactersLength));
+   randomId = randomId + random;
+ }
+ console.log(randomId);
+ 1. Write a script which generates a random hexadecimal number.
 
+     ```sh
+     '#ee33df'
+     ```
+ const characters ='abcdef0123456789';
+ let randomId = ' ';
+ const charactersLength = characters.length;
+ for ( let i = 0; i < 6; i++ ) {
+   let random = characters.charAt((Math.random() * charactersLength));
+   randomId = randomId + random;
+ }
+ console.log(randomId);
 
+ 1. Write a script which generates a random rgb color number.
+
+     ```sh
+     rgb(240,180,80)
+     ```
+
+    const random = Math.floor(Math.random()*255);
+    console.log(`rgb(${random}, ${random}, ${random})`);
+
+ 1. Using the above countries array, create the following new array.
+
+     ```sh
+     ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+     ```
+let countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
+let newCountries = [];
+for (let i = 0; i < countries.length; i++) {
+    newCountries.push([countries[i], countries[i].slice(0, 3), countries[i].length])
+}
+console.log(newCountries)
+ 1. Using the above countries array, create an array for countries length'.
+
+     ```sh
+     [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
+     ```
+
+ 1. Use the countries array to create the following array of arrays:
+
+     ```sh
+       [
+       ['Albania', 'ALB', 7],
+       ['Bolivia', 'BOL', 7],
+       ['Canada', 'CAN', 6],
+       ['Denmark', 'DEN', 7],
+       ['Ethiopia', 'ETH', 8],
+       ['Finland', 'FIN', 7],
+       ['Germany', 'GER', 7],
+       ['Hungary', 'HUN', 7],
+       ['Ireland', 'IRE', 7],
+       ['Iceland', 'ICE', 7],
+       ['Japan', 'JAP', 5],
+       ['Kenya', 'KEN', 5]
+     ]
+     ```
+
+ 2. In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+
+     ```sh
+     ['Finland','Ireland', 'Iceland']
+     ```
+
+ 3. In above countries array, check if there is  a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia'.
+
+     ```sh
+     ['Albania', 'Bolivia','Ethiopia']
+     ```
+
+ 4. Using the above countries array, find the country containing the biggest number of characters.
+
+       ```sh
+       Ethiopia
+       ```
+
+ 5. Using the above countries array, find the country containing only 5 characters.
+
+     ```sh
+     ['Japan', 'Kenya']
+     ```
+
+ 6. Find the longest word in the webTechs array
+ 7. Use the webTechs array to create the following array of arrays:
+
+     ```sh
+     [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+     ```
+
+ 8. An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+ 9. Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+ 10. This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+ 11. Print all the elements of array as shown below.
+
+     ```js
+       const fullStack = [
+         ['HTML', 'CSS', 'JS', 'React'],
+         ['Node', 'Express', 'MongoDB']
+       ]
+     ````
+
+     ```sh
+       HTML
+       CSS
+       JS
+       REACT
+       NODE
+       EXPRESS
+       MONGODB
+     ```
+
+ ### Exercises: Level 3
+
+ 1. Copy countries array(Avoid mutation)
+ 1. Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+ 1. Sort the webTechs array and mernStack array
+ 1. Extract all the countries contain the word 'land' from the [countries array](https:github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
+ 1. Find the country containing the hightest number of characters in the [countries array](https:github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
+ 1. Extract all the countries contain the word 'land' from the [countries array](https:github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
+ 1. Extract all the countries containing only four characters from the [countries array](https:github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
+ 1. Extract all the countries containing two or more words from the [countries array](https:github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
+ 1. Reverse the [countries array](https:github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and capitalize each country and stored it as an array
