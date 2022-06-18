@@ -220,7 +220,7 @@
  14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
      ```js
-    let randomNumbers = [];
+     let randomNumbers = [];
        for (let i = 0; i < 5; i++) {
          let num = (Math.floor(Math.random()*10));
          if(randomNumbers.indexOf(num) === -1)
@@ -236,11 +236,9 @@
      5j2khz
      ```
      
-    ```JS
-     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    ```
-    
-    ```JS
+     ```js
+      const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
      let randomId = ' ';
      const charactersLength = characters.length;
      for ( let i = 0; i < 6; i++ ) {
@@ -248,7 +246,7 @@
        randomId = randomId + random;
      }
      console.log(randomId);
-    ```
+     ```
     
  ### Exercises: Level 2
 
