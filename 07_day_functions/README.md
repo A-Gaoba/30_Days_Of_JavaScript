@@ -138,11 +138,11 @@
 
  13. Body mass index(BMI) is calculated as follows: _bmi = weight in Kg / (height x height) in m2_. Write a function which calculates _bmi_. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is _underweight, normal, overweight_ or _obese_ based the information given below.
 
-//     - The same groups apply to both men and women.
-//     - _Underweight_: BMI is less than 18.5
-//     - _Normal weight_: BMI is 18.5 to 24.9
-//     - _Overweight_: BMI is 25 to 29.9
-//     - _Obese_: BMI is 30 or more
+     - The same groups apply to both men and women.
+     - _Underweight_: BMI is less than 18.5
+     - _Normal weight_: BMI is 18.5 to 24.9
+     - _Overweight_: BMI is 25 to 29.9
+     - _Obese_: BMI is 30 or more
 
    ```js
       BMI = (weight, height) => {
