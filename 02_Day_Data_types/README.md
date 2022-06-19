@@ -1,4 +1,5 @@
-# 30_Days_Of_JavaScript
+### 💻 Exercises: Day 2
+
 
 ### Exercise: Level 1
 
