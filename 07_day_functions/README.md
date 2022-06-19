@@ -144,20 +144,22 @@
 //     - _Overweight_: BMI is 25 to 29.9
 //     - _Obese_: BMI is 30 or more
 
-            BMI = (weight, height) => {
-                let bmi = weight / (height / height);
-                if (bmi < 18.5) {
-                    return `underweight`;
-                } else if (bmi > 18.5 && bmi < 24.9) {
-                    return `Normal weight`;
-                } else if (bmi > 25 && bmi < 29.9) {
-                    return `overweight`;
-                } else {
-                    return `obese`;
-                }
-            }
-            console.log(BMI(10, 3));
-
+   ```js
+      BMI = (weight, height) => {
+          let bmi = weight / (height / height);
+          if (bmi < 18.5) {
+              return `underweight`;
+          } else if (bmi > 18.5 && bmi < 24.9) {
+              return `Normal weight`;
+          } else if (bmi > 25 && bmi < 29.9) {
+              return `overweight`;
+          } else {
+              return `obese`;
+          }
+          }
+          console.log(BMI(10, 3));
+   ```
+   
  14. Write a function called _checkSeason_, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
             checkSeason=(month)=>{
                 switch (month) {
