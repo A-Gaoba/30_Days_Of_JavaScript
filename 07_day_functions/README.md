@@ -166,7 +166,9 @@
    ```
    
  14. Write a function called _checkSeason_, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
-            checkSeason=(month)=>{
+     
+     ```js
+           checkSeason=(month)=>{
                 switch (month) {
                    case "September":
                    case "October":
@@ -193,7 +195,8 @@
                    }
             }
             checkSeason('september');
-
+     ```
+  
  15. Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
      ```js
       findMax = (num1, num2, num3)=>{
