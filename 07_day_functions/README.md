@@ -119,23 +119,28 @@
     ```
 
  9. Density of a substance is calculated as follows:_density= mass/volume_. Write a function which calculates _density_.
- 
-            density = (mass, volume)=> { return mass/volume; }
-            console.log(density(12,4));
-
+ ```js
+     density = (mass, volume)=> { return mass/volume; }
+     console.log(density(12,4));
+ ```
  10. Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, _speed_.
-            Speed = (totalDistance, totaltime)=> { return totalDistance/totaltime; }
-            console.log(density(24,6));   
-
+  ```js
+     Speed = (totalDistance, totaltime)=> { return totalDistance/totaltime; }
+     console.log(density(24,6));   
+ ```
+ 
  11. Weight of a substance is calculated as follows: _weight = mass x gravity_. Write a function which calculates _weight_.
-            _weight=(mass, gravity)=>{return mass*gravity}
-            console.log(_weight(7,5));
-
+  ```js
+     _weight=(mass, gravity)=>{return mass*gravity}
+     console.log(_weight(7,5));
+ ```
         
  12. Temperature in oC can be converted to oF using this formula: _oF = (oC x 9/5) + 32_. Write a function which convert oC to oF _convertCelsiusToFahrenheit_.
-        convertCelsiusToFahrenheit =(oC)=>{ return (oC * 9/5) + 32 }
-        console.log(convertCelsiusToFahrenheit(5));
-
+   ```js
+     convertCelsiusToFahrenheit =(oC)=>{ return (oC * 9/5) + 32 }
+     console.log(convertCelsiusToFahrenheit(5));
+  ```
+  
  13. Body mass index(BMI) is calculated as follows: _bmi = weight in Kg / (height x height) in m2_. Write a function which calculates _bmi_. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is _underweight, normal, overweight_ or _obese_ based the information given below.
 
      - The same groups apply to both men and women.
