@@ -1,124 +1,134 @@
-
 // ## 💻 Exercises
 
 // ### Exercises: Level 1
 
 // 1. Declare a function _fullName_ and it print out your full name.
-        // function fullName(){
-        //     console.log(`My name is Abdualrahman Abdo Ali Mohammed.`);
-        // }
-        // fullName();
-        
-        fullName = ()=> {console.log(`My name is Abdualrahman Abdo Ali Mohammed.`);}
-        fullName();
+// function fullName(){
+//     console.log(`My name is Abdualrahman Abdo Ali Mohammed.`);
+// }
+// fullName();
+
+fullName = () => {
+  console.log(`My name is Abdualrahman Abdo Ali Mohammed.`);
+};
+fullName();
 // 2. Declare a function _fullName_ and now it takes firstName, lastName as a parameter and it returns your full - name.
 
-         function fullName(firstName, lastName){
-             return(`${firstName} ${lastName}`)
-         }
-         console.log(fullName('Abdualrahman', 'Mohammed'));
+function fullName(firstName, lastName) {
+  return `${firstName} ${lastName}`;
+}
+console.log(fullName("Abdualrahman", "Mohammed"));
 
-        //arrow function  
-        fullName = (firstName, lastName) => {return(`${firstName} ${lastName}`)}
-        console.log(fullName('Abdualrahman', 'Mohammed'));
-        
+//arrow function
+fullName = (firstName, lastName) => {
+  return `${firstName} ${lastName}`;
+};
+console.log(fullName("Abdualrahman", "Mohammed"));
+
 // 3. Declare a function _addNumbers_ and it takes two two parameters and it returns sum.
-        function addNumbers(num1, num2){
-            sum = num1 + num2;
-            return (`${num1} + ${num2} = ${sum}`);
-        }
-        console.log(addNumbers(3,4));
-        
-        //arrow function  
-        addNumbers = (num1, num2)=> {
-            sum = num1 + num2;
-            return (`${num1} + ${num2} = ${sum}`);
-        }
-        console.log(addNumbers(3,4));
+function addNumbers(num1, num2) {
+  sum = num1 + num2;
+  return `${num1} + ${num2} = ${sum}`;
+}
+console.log(addNumbers(3, 4));
+
+//arrow function
+addNumbers = (num1, num2) => {
+  sum = num1 + num2;
+  return `${num1} + ${num2} = ${sum}`;
+};
+console.log(addNumbers(3, 4));
 
 // 4. An area of a rectangle is calculated as follows: _area = length x width_. Write a function which calculates _areaOfRectangle_.
-         function areaOfRectangle(length,width){
-            area = length * width;
-            return area;
-         }
-         console.log(areaOfRectangle(7,6));
+function areaOfRectangle(length, width) {
+  area = length * width;
+  return area;
+}
+console.log(areaOfRectangle(7, 6));
 
-         //arrow function  
-        areaOfRectangle=(length,width) =>{
-           area = length * width;
-           return area;
-        }
-        console.log(areaOfRectangle(7,6));
+//arrow function
+areaOfRectangle = (length, width) => {
+  area = length * width;
+  return area;
+};
+console.log(areaOfRectangle(7, 6));
 
 // 5. A perimeter of a rectangle is calculated as follows: _perimeter= 2x(length + width)_. Write a function which calculates _perimeterOfRectangle_.
-            function perimeterOfRectangle(length,width){
-                area = 2* (length + width);
-                return area;
-             }
-             console.log(perimeterOfRectangle(7,6));
+function perimeterOfRectangle(length, width) {
+  area = 2 * (length + width);
+  return area;
+}
+console.log(perimeterOfRectangle(7, 6));
 
-             //arrow function  
-            perimeterOfRectangle = (length,width)=>{
-               area = 2* (length + width);
-               return area;
-            }
-            console.log(perimeterOfRectangle(7,6));
+//arrow function
+perimeterOfRectangle = (length, width) => {
+  area = 2 * (length + width);
+  return area;
+};
+console.log(perimeterOfRectangle(7, 6));
 
 // 6. A volume of a rectangular prism is calculated as follows: _volume = length x width x height_. Write a function which calculates _volumeOfRectPrism_.
-             function volumeOfRectPrism(length,width,height){
-                 volume = length * width * height;
-                 return volume;
-              }
-              console.log(volumeOfRectPrism(7,6,4));
+function volumeOfRectPrism(length, width, height) {
+  volume = length * width * height;
+  return volume;
+}
+console.log(volumeOfRectPrism(7, 6, 4));
 
-              //arrow function  
-             volumeOfRectPrism = (length,width,height)=>{
-               volume = length * width * height;
-               return volume;
-            }
-            console.log(volumeOfRectPrism(7,6,4));
+//arrow function
+volumeOfRectPrism = (length, width, height) => {
+  volume = length * width * height;
+  return volume;
+};
+console.log(volumeOfRectPrism(7, 6, 4));
 
 // 7. Area of a circle is calculated as follows: _area = π x r x r_. Write a function which calculates _areaOfCircle_
 
-            function areaOfCircle(r){
-                const PI = 3.14;
-                area = PI* r * r;
-                return area;
-             }
-             console.log(areaOfCircle(4));
+function areaOfCircle(r) {
+  const PI = 3.14;
+  area = PI * r * r;
+  return area;
+}
+console.log(areaOfCircle(4));
 
-             //arrow function  
-            areaOfCircle = (r)=> { 
-                const PI = 3.14;
-                area = PI* r * r;
-                return area;
-            }
-             console.log(areaOfCircle(4));
+//arrow function
+areaOfCircle = (r) => {
+  const PI = 3.14;
+  area = PI * r * r;
+  return area;
+};
+console.log(areaOfCircle(4));
 
 // 8. Circumference of a circle is calculated as follows: _circumference = 2πr_. Write a function which calculates _circumOfCircle_
-            circumOfCircle = (r)=> { 
-                const PI = 3.14;
-                circumference = 2* PI* r;
-                return circumference;
-            }
-            console.log(circumOfCircle(4));
+circumOfCircle = (r) => {
+  const PI = 3.14;
+  circumference = 2 * PI * r;
+  return circumference;
+};
+console.log(circumOfCircle(4));
 
 // 9. Density of a substance is calculated as follows:_density= mass/volume_. Write a function which calculates _density_.
-            density = (mass, volume)=> { return mass/volume; }
-            console.log(density(12,4));
+density = (mass, volume) => {
+  return mass / volume;
+};
+console.log(density(12, 4));
 
 // 10. Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, _speed_.
-            Speed = (totalDistance, totaltime)=> { return totalDistance/totaltime; }
-            console.log(density(24,6));   
+Speed = (totalDistance, totaltime) => {
+  return totalDistance / totaltime;
+};
+console.log(density(24, 6));
 
 // 11. Weight of a substance is calculated as follows: _weight = mass x gravity_. Write a function which calculates _weight_.
-            _weight=(mass, gravity)=>{return mass*gravity}
-            console.log(_weight(7,5));
+_weight = (mass, gravity) => {
+  return mass * gravity;
+};
+console.log(_weight(7, 5));
 
-        
 // 12. Temperature in oC can be converted to oF using this formula: _oF = (oC x 9/5) + 32_. Write a function which convert oC to oF _convertCelsiusToFahrenheit_.
-        convertCelsiusToFahrenheit =(oC)=>{ return (oC * 9/5) + 32 }
-        console.log(convertCelsiusToFahrenheit(5));
+convertCelsiusToFahrenheit = (oC) => {
+  return (oC * 9) / 5 + 32;
+};
+console.log(convertCelsiusToFahrenheit(5));
 
 // 13. Body mass index(BMI) is calculated as follows: _bmi = weight in Kg / (height x height) in m2_. Write a function which calculates _bmi_. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is _underweight, normal, overweight_ or _obese_ based the information given below.
 
@@ -128,137 +138,137 @@
 //     - _Overweight_: BMI is 25 to 29.9
 //     - _Obese_: BMI is 30 or more
 
-            BMI = (weight, height) => {
-                let bmi = weight / (height / height);
-                if (bmi < 18.5) {
-                    return `underweight`;
-                } else if (bmi > 18.5 && bmi < 24.9) {
-                    return `Normal weight`;
-                } else if (bmi > 25 && bmi < 29.9) {
-                    return `overweight`;
-                } else {
-                    return `obese`;
-                }
-            }
-            console.log(BMI(10, 3));
+BMI = (weight, height) => {
+  let bmi = weight / (height / height);
+  if (bmi < 18.5) {
+    return `underweight`;
+  } else if (bmi > 18.5 && bmi < 24.9) {
+    return `Normal weight`;
+  } else if (bmi > 25 && bmi < 29.9) {
+    return `overweight`;
+  } else {
+    return `obese`;
+  }
+};
+console.log(BMI(10, 3));
 
 // 14. Write a function called _checkSeason_, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
-            checkSeason=(month)=>{
-                switch (month) {
-                   case "September":
-                   case "October":
-                   case "November":
-                     console.log("Autumn");
-                     break;
-                   case "December":
-                   case "January":
-                   case "Jebuary":
-                     console.log("Winter");
-                     break;
-                   case "March":
-                   case "April":
-                   case "May":
-                     console.log("Spring");
-                     break;
-                   case "June":
-                   case "July":
-                   case "August":
-                     console.log("Summer");
-                     break;
-                   default:
-                     console.log("Rewrite the month correctly");
-                   }
-            }
-            checkSeason('september');
+checkSeason = (month) => {
+  switch (month) {
+    case "September":
+    case "October":
+    case "November":
+      console.log("Autumn");
+      break;
+    case "December":
+    case "January":
+    case "Jebuary":
+      console.log("Winter");
+      break;
+    case "March":
+    case "April":
+    case "May":
+      console.log("Spring");
+      break;
+    case "June":
+    case "July":
+    case "August":
+      console.log("Summer");
+      break;
+    default:
+      console.log("Rewrite the month correctly");
+  }
+};
+checkSeason("september");
 
 // 15. Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
-            findMax = (num1, num2, num3)=>{
-                if(num1 > num2 && num1 > num3)
-                return num1
-                if (num1 < num2 && num2 > num3) {
-                    return num2
-                } else {
-                    return num3
-                }
-            }
-            console.log(findMax(0, -10, -2));
+findMax = (num1, num2, num3) => {
+  if (num1 > num2 && num1 > num3) return num1;
+  if (num1 < num2 && num2 > num3) {
+    return num2;
+  } else {
+    return num3;
+  }
+};
+console.log(findMax(0, -10, -2));
 
 //     ```js
-//     console.log(findMax(0, 10, 5))
+console.log(findMax(0, 10, 5));
 //     10
-//     console.log(findMax(0, -10, -2))
+console.log(findMax(0, -10, -2));
 //     0
 //     ```
-  
+
 // ### Exercises: Level 2
 
 // 1. Linear equation is calculated as follows: _ax + by + c = 0_. Write a function which calculates value of a linear equation, _solveLinEquation_.
-            
+
+
 // 1. Quadratic equation is calculated as follows: _ax2 + bx + c = 0_. Write a function which calculates value or values of a quadratic equation, _solveQuadEquation_.
 
-//     ```js
-//     console.log(solveQuadratic()) // {0}
-//     console.log(solveQuadratic(1, 4, 4)) // {-2}
-//     console.log(solveQuadratic(1, -1, -2)) // {2, -1}
-//     console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
-//     console.log(solveQuadratic(1, 0, -4)) //{2, -2}
-//     console.log(solveQuadratic(1, -1, 0)) //{1, 0}
-//     ```
+```js
+     console.log(solveQuadratic()) // {0}
+     console.log(solveQuadratic(1, 4, 4)) // {-2}
+     console.log(solveQuadratic(1, -1, -2)) // {2, -1}
+     console.log(solveQuadratic(1, 7, 12)) // {-3, -4}
+     console.log(solveQuadratic(1, 0, -4)) //{2, -2}
+     console.log(solveQuadratic(1, -1, 0)) //{1, 0}
+     ```;
 
 // 1. Declare a function name _printArray_. It takes array as a parameter and it prints out each value of the array.
- 
+
 // 1. Write a function name _showDateTime_ which shows time in this format: 08/01/2020 04:08 using the Date object.
 
-//     ```sh
-//     showDateTime()
-//     08/01/2020 04:08
-//     ```
-            showDateTime = ()=>{
-                let date = new Date();
-                let year = date.getFullYear();
-                let month =(date.getMonth() + 1).toString().padStart(2, "0");
-                let dateDay = date.getDate().toString().padStart(2, "0");
-                let hour = date.getHours();
-                let minute = date.getMinutes();
-                return `${dateDay}/${month}/${year}  ${hour}:${minute} `
-            }
-            console.log(showDateTime());
+     ```sh
+     showDateTime()
+     08/01/2020 04:08
+     ```
+     
+    ```js
+
+     showDateTime = () => {
+      let date = new Date();
+      let year = date.getFullYear();
+      let month = (date.getMonth() + 1).toString().padStart(2, "0");
+      let dateDay = date.getDate().toString().padStart(2, "0");
+      let hour = date.getHours();
+      let minute = date.getMinutes();
+      return `${dateDay}/${month}/${year}  ${hour}:${minute} `;
+    };
+    console.log(showDateTime());
+    ```
 
 // 1. Declare a function name _swapValues_. This function swaps value of x to y.
 
-//     ```js
-//     swapValues(3, 4) // x => 4, y=>3
-//     swapValues(4, 5) // x = 5, y = 4
-//     ```
-            swapValues=(x,y)=>{
-                let a = x;
-                x = y;
-                y = a;
-                console.log(x, y)
-            }
-            swapValues(3,5);
+    ```js
+    swapValues(3, 4) // x => 4, y=>3
+    swapValues(4, 5) // x = 5, y = 4
+    ```
+swapValues = (x, y) => {
+  let a = x;
+  x = y;
+  y = a;
+  console.log(x, y);
+};
+swapValues(3, 5);
 
 // 1. Declare a function name _reverseArray_. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
-//     ```js
-//     console.log(reverseArray([1, 2, 3, 4, 5]))
-         //[5, 4, 3, 2, 1]
-//     console.log(reverseArray(['A', 'B', 'C']))
-         //['C', 'B', 'A']
-//     ```
+     ```js
+     console.log(reverseArray([1, 2, 3, 4, 5])) //[5, 4, 3, 2, 1]
+     console.log(reverseArray(['A', 'B', 'C']))//['C', 'B', 'A']
+     ```
 
-        let NewArr = [];
-        reverseArray =(arr) =>{
-            for(let i = arr.length - 1; i >= 0; i--) {
-            NewArr.push(arr[i]);
-        }
-        }
-        reverseArray(['A', 'B', 'C']);
-        console.log(NewArr);
+let NewArr = [];
+reverseArray = (arr) => {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    NewArr.push(arr[i]);
+  }
+};
+reverseArray(["A", "B", "C"]);
+console.log(NewArr);
 
 // 1. Declare a function name _capitalizeArray_. It takes array as a parameter and it returns the - capitalizedarray.
-
-
 
 // 1. Declare a function name _addItem_. It takes an item parameter and it returns an array after adding the item
 // 1. Declare a function name _removeItem_. It takes an index parameter and it returns an array after removing an item
