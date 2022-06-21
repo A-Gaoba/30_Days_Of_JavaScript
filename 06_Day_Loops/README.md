@@ -272,35 +272,41 @@
      ```sh
      '#ee33df'
      ```
- const characters ='abcdef0123456789';
- let randomId = ' ';
- const charactersLength = characters.length;
- for ( let i = 0; i < 6; i++ ) {
-   let random = characters.charAt((Math.random() * charactersLength));
-   randomId = randomId + random;
- }
- console.log(randomId);
-
+     
+     ```js
+      const characters ='abcdef0123456789';
+      let randomId = ' ';
+      const charactersLength = characters.length;
+      for ( let i = 0; i < 6; i++ ) {
+       let random = characters.charAt((Math.random() * charactersLength));
+        randomId = randomId + random;
+       }
+      console.log(randomId);
+    ```
  1. Write a script which generates a random rgb color number.
 
      ```sh
      rgb(240,180,80)
      ```
-
+   ```
     const random = Math.floor(Math.random()*255);
     console.log(`rgb(${random}, ${random}, ${random})`);
-
+   ```
  1. Using the above countries array, create the following new array.
 
      ```sh
      ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
-     ```
-let countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
-let newCountries = [];
-for (let i = 0; i < countries.length; i++) {
+    
+    ```
+  ```
+   let countries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"];
+    let newCountries = [];
+    for (let i = 0; i < countries.length; i++) {
     newCountries.push([countries[i], countries[i].slice(0, 3), countries[i].length])
-}
-console.log(newCountries)
+    }
+    console.log(newCountries)
+
+  ```
  1. Using the above countries array, create an array for countries length'.
 
      ```sh
