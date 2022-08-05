@@ -1,5 +1,5 @@
 
- # 💻 Exercises: Day 7
+ # 💻 Exercises: Day 8
 
 ### Exercises: Level 1
 
