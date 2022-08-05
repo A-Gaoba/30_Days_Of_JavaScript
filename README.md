@@ -10,7 +10,7 @@
 | 05    |                                                     [Arrays](./05_Day_Arrays/README.md)                                                      |
 | 06    |                                                       [Loops](./06_Day_Loops/README.md)                                                       |
 | 07    |                                                 [Functions](./07_day_functions/README.md)                                                 |
-| 08    |                                                    [Objects](./08_Day_Objects/08_day_objects.md)                                                    |
+| 08    |                                                    [Objects](./08_Day_Objects/README.md)                                                    |
 | 09    |                             [Higher Order Functions](./09_Day_Higher_order_functions/README.md)                              |
 | 10    |                                           [Sets and Maps](./10_Day_Sets_and_Maps/10_day_Sets_and_Maps.md)                                           |
 | 11    |                      [Destructuring and Spreading](./11_Day_Destructuring_and_spreading/11_day_destructuring_and_spreading.md)                      |
