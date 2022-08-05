@@ -20,7 +20,7 @@ const products = [
 
 ```
     Foreach takes a callback function and run that callback function on each element of array one by one.
-    Map     takes a callback function and run it against every element on the array but whats makes it unique is it generate a new array based on your existing array.
+    Map takes a callback function and run it against every element on the array but whats makes it unique is it generate a new array based on your existing array.
      Filter let you provide a callback for every element and returns a filtered array.
     The main difference between forEach and filter is that forEach just loop over the array and executes the callback but filter executes the callback and check its return value
     Reduce   used to reduce the array to one single value.
@@ -49,18 +49,25 @@ const products = [
 ```
 
 6.  Use **_map_** to create a new array by changing each country to uppercase in the countries array.
+```js
     const countriesInUpperCase = countries.map((country) => {
     country.toUpperCase();
     });
     console.log(countriesInUpperCase);
+```
 
 7.  Use **_map_** to create an array of countries length from countries array.
+```js
     countries.forEach((country) => {
     console.log(country.length);
     });
+```
 
 8.  Use **_map_** to create a new array by changing each number to square in the numbers array
-    numbers.map((number) => console.log(number \*\* 2));
+```js
+    numbers.map((number) => console.log(number ** 2));
+```
+
 9.  Use **_map_** to change to each name to uppercase in the names array
     names.map((name) => console.log(name.toUpperCase()));
 
