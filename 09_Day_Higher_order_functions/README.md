@@ -167,7 +167,7 @@ const products = [
 22. Explain the difference between **_find_** and **_findIndex_**.
 ```js
     FindIndex returns the index of the first element
-    FindIndex returns the first element.
+    Find returns the first element.
 ```
 
 23. Use **_find_** to find the first country containing only six letters in the countries array
