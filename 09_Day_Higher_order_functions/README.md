@@ -27,19 +27,26 @@ const products = [
 ```
 
 3.  Use **_forEach_** to console.log each country in the countries array.
+```js
     countries.forEach((country) => {
     console.log(country);
     });
+```
 
 4.  Use **_forEach_** to console.log each name in the names array.
+```js
     names.forEach((name) => {
     console.log(name);
-    })
+    });
+```
+
 
 5.  Use **_forEach_** to console.log each number in the numbers array.
+```js
     numbers.forEach((number) => {
     console.log(number);
     });
+```
 
 6.  Use **_map_** to create a new array by changing each country to uppercase in the countries array.
     const countriesInUpperCase = countries.map((country) => {
