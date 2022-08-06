@@ -12,7 +12,7 @@
 | 07    |                                                 [Functions](./07_day_functions/README.md)                                                 |
 | 08    |                                                    [Objects](./08_Day_Objects/README.md)                                                    |
 | 09    |                             [Higher Order Functions](./09_Day_Higher_order_functions/README.md)                              |
-| 10    |                                           [Sets and Maps](./10_Day_Sets_and_Maps/10_day_Sets_and_Maps.md)                                           |
+| 10    |                                           [Sets and Maps](./10_day_Sets_and_Maps/README.md)                                           |
 | 11    |                      [Destructuring and Spreading](./11_Day_Destructuring_and_spreading/11_day_destructuring_and_spreading.md)                      |
 | 12    |                                  [Regular Expressions](./12_Day_Regular_expressions/12_day_regular_expressions.md)                                  |
 | 13    |                             [Console Object Methods](./13_Day_Console_object_methods/13_day_console_object_methods.md)                              |
