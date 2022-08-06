@@ -1,4 +1,4 @@
-### 💻 Exercises: Day 2
+## 💻 Exercises : Day 2
 
 
 ### Exercise: Level 1
