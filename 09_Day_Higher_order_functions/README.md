@@ -217,24 +217,28 @@ const foundRussia = countries.findIndex((contry) => contry === "Russia");
 console.log(foundRussia);
 ```
 
+
 ### Exercises: Level 2
 
 1.  Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
-
+```js
 const total = products
 .filter((product) => typeof product.price === "number")
 .map((elem) => elem.price)
 .reduce((acc, cur) => acc + cur);
 console.log(total);
+```
 
 2.  Find the sum of price of products using only reduce reduce(callback))
-    const totalUsingReduce = products.reduce((acc, cur) => {
-    return typeof cur.price == "number" ? acc + cur.price : acc + 0;
-    }, 0);
-    console.log(totalUsingReduce);
+```
+  const totalUsingReduce = products.reduce((acc, cur) => {
+  return typeof cur.price == "number" ? acc + cur.price : acc + 0;
+  }, 0);
+  console.log(totalUsingReduce);
+```
 
 3.  Declare a function called **_categorizeCountries_** which returns an array of countries which have some common pattern(you find the countries array in this repository as countries.js(eg 'land', 'ia', 'island','stan')).
-
+```
 const country = countries
 .map((country) => country.name)
 .filter((elem) =>
@@ -247,6 +251,7 @@ elem.endsWith("stan")
 : ""
 );
 console.log(country);
+```
 
 4.  Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
 
