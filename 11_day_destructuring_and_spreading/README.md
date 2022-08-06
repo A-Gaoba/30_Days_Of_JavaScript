@@ -1,4 +1,4 @@
-## 💻 Exercises : Day 12
+## 💻 Exercises : Day 11
 
 ### Exercises: Level 1
 
